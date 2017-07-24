@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Name: Sean Lance CS 81
+     UNIT 10 - PROBLEM #2:
+     Use jQuery click() and append() methods to insert
+     HTML content at the end of <p> and at the end of <ol>.
+-->
+<html lang = "en-US">
+<head>
+  <meta charset = "utf-8">
+  <title>Problem #2 | Unit 10</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      //Declare and initialize messeage variables
+      var appendMessage1 = " <strong>Appended text.</strong>";
+      var appendMessage2 = "<li>Appended item</li>";
+
+      //Append action for <p> if button 1 is clicked
+      $('#btn1').click(function() {
+        $("p").append(appendMessage1);
+      });
+
+      //Append action for <ol> if button 2 is clicked
+      $('#btn2').click(function() {
+        $("ol").append(appendMessage2);
+      });
+
+    });
+  </script>
+</head>
+<body>
+
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+
+  <ol>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ol>
+
+  <button id="btn1">Append text</button>
+  <button id="btn2">Append list items</button>
+
+</body>
+</html>

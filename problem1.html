@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- Name: Sean Lance CS 81
+     UNIT 10 - PROBLEM #1:
+     Use the animate() method to set the font-size of <div> to 100 pixels.
+     The duration of the effect should be "slow".
+-->
+<html lang = "en-US">
+<head>
+  <title>Problem 1 | Unit 10</title>
+  <meta charset = "utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      //Animate the font size of divBox
+        $("div").animate({
+          fontSize: '100px'
+        }, 'slow', 'linear', function() {
+          // fontSize Animation complete.
+          });
+        });
+  </script>
+</head>
+<body>
+  <!-- HTML element used for the animation -->
+  <div style="background:#98bf21; height:200px; width:600px;">Hello World</div>
+
+</body>
+</html>
